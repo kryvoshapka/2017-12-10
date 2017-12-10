@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.wrapper-inner {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+header {
+    height: 100px;
+}
+
+header[role="banner"] .wrapper-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.phone-block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-top: -5px;
+}
+
+.phone-block span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.phone-block a span {
+    font-size: 25px;
+}
+
+nav {
+    padding-left: 25px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.colored {
+    color: #d53b3b;
+}
+
+.push-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 176px;
+    height: 55px;
+    background-image: url(images/red-button.png);
+    font-family: "Fira Sans Bold", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo img:hover,
+.push-button:hover {
+    opacity: .2;
+}
+
+span:hover {
+    text-shadow: 2px 2px 5px #1a99fb;
+}
+
+header [role="banner"] .red-button {
+    background-image: url(images/red-button.png);
+    background-size: 176px, 55px, auto auto;
+    /* не поняла как делать градиент(( background: radial-gradient(transparent, rgba(238, 57, 36, .67)) no-repeat center center, url(images/red-button.png)no-repeat 0 0;*/
+}
+
+/*main*/
+
+main {
+    height: 900px;
+    background: url(images/background-2.jpg) no-repeat center top;
+}
+
+main .wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 57px;
+    color: #ffffff;
+    padding: 90px 0 30px 0;
+    position: relative;
+    z-index: 1;
+}
+
+h1:before {
+    position: absolute;
+    width: 223px;
+    height: 198px;
+    display: block;
+    content: "";
+    background: url(images/background-title.png) no-repeat 0 0;
+    left: -90px;
+    top: 25px;
+    z-index: -1;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.black-button {
+    background-image: url(images/black-button.png);
+}
+
+main .push-button:hover {
+    opacity: .7;
+}
+
+.buttons {
+    display: flex;
+    width: 375px;
+    padding: 25px 0 90px 0;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: bolder;
+    color: #db3232;
+    padding-bottom: 35px;
+}
+
+.partners {
+    width: 1230px;
+    display: flex;
+    justify-content: space-between;
+}
+
+figure {
+    display: block;
+    float: left;
+}
+
+figure:hover {
+    opacity: .7;
+}
+
+figcaption {
+    color: white;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    padding: 15px 0 120px 0;
+}
+
+figcaption:hover {
+    color: #1a99fb;
+    text-shadow: 3px 3px 5px #ffffff;
+}
+
+/*footer*/
+
+.scallop {
+    background: url(images/scallop.png) repeat-x;
+    height: 4px;
+}
+
+footer[role="contentinfo"] {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    height: 115px;
+    background-color: white;
+}
+
+.copyright {
+    width: 285px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.copyright:hover {
+    opacity: .5;
+}
+
+.white-line {
+    position: relative;
+}
+
+.scallop-bottom {
+    background: url(images/scallop-bottom.png) repeat-x;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 115px;
+}
+
+.white-line .wrapper-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.white-line .wrapper-inner .phone-block {
+    padding-top: 28px;
+}
+
+.white-line .phone-block span {
+    line-height: 1.5;
+}
